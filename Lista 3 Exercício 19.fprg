@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 08:46:20 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA4OjA3OjQwICI7Mjk3Mg=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA4OjQ2OjIwICI7NDszMDg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="20.&#9;Tabela: Exibir as seguintes s&#233;ries 1, 2, 3,...,m e 1, 2,...,n  no formato de tabela, onde m e n s&#227;o n&#250;meros inteiros digitados pelo usu&#225;rio."/>
+            <declare name="lin, col, maxlin, maxcol" type="Integer" array="False" size=""/>
+            <input variable="maxlin"/>
+            <input variable="maxcol"/>
+            <assign variable="lin" expression="1"/>
+            <while expression="lin &lt;= maxlin">
+                <assign variable="col" expression="1"/>
+                <while expression="col &lt;= maxcol">
+                    <output expression="lin &amp; col &amp; &quot; &quot;" newline="False"/>
+                    <assign variable="col" expression="col + 1"/>
+                </while>
+                <output expression="tochar(13)" newline="False"/>
+                <assign variable="lin" expression="lin + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

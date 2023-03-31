@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-22 08:18:28 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjAxOjEzOjU5ICI7Mjk2NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjI7IjA4OjE4OjI4ICI7ODszMDg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="5.&#9;Calcular o seguinte produto: 1 x 2 x 3 x 4 x 5 x ... x N   (fatorial de um n&#250;mero)"/>
+            <declare name="serie, vez, n" type="Integer" array="False" size=""/>
+            <assign variable="serie" expression="1"/>
+            <assign variable="vez" expression="1"/>
+            <input variable="n"/>
+            <while expression="vez &lt;= n">
+                <assign variable="serie" expression="serie * vez"/>
+                <output expression="serie" newline="True"/>
+                <assign variable="vez" expression="vez+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

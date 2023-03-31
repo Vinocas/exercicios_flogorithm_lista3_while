@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 10:47:29 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjI7IjA4OjIzOjM0ICI7Mjk2Nw=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjEwOjQ3OjI5ICI7NzszMDkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="8.&#9;Calcular e exibir a soma dos n&#250;meros pares menores que 100, inclusive."/>
+            <declare name="cont, t" type="Integer" array="False" size=""/>
+            <assign variable="cont" expression="0"/>
+            <assign variable="t" expression="0"/>
+            <while expression="cont &lt;= 100">
+                <if expression="cont mod 2 = 0">
+                    <then>
+                        <assign variable="t" expression="t + cont"/>
+                        <output expression="t" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="cont" expression="cont + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

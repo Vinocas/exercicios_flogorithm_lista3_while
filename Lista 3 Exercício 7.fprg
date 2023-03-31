@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-22 08:40:22 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjI7IjA4OjIzOjM0ICI7Mjk2Nw=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjI7IjA4OjQwOjIyICI7MjszMDcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="7.&#9;Calcular e exibir a quantidade de n&#250;meros pares compreendidos entre M e N, inclusive."/>
+            <declare name="m, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o valor de M:&quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;Insira o valor de N: &quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="m = n">
+                <output expression="&quot;O valor das vari&#225;veis n&#227;o pode ser igual!&quot;" newline="True"/>
+                <output expression="&quot;Insira novamente o valor de M:&quot;" newline="True"/>
+                <input variable="m"/>
+                <output expression="&quot;Insira novamente o valor de N:&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <if expression="m &lt; n">
+                <then>
+                    <if expression="m mod 2 = 0">
+                        <then>
+                            <output expression="m" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <while expression="m != n">
+                        <assign variable="m" expression="m + 1"/>
+                        <if expression="m mod 2 = 0">
+                            <then>
+                                <output expression="m" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </while>
+                </then>
+                <else>
+                    <if expression="n mod 2 = 0">
+                        <then>
+                            <output expression="n" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <while expression="n != m">
+                        <assign variable="n" expression="n + 1"/>
+                        <if expression="n mod 2 = 0">
+                            <then>
+                                <output expression="n" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-22 09:19:44 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjI7IjA5OjAxOjU1ICI7Mjk2Nw=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjI7IjA5OjE5OjQ0ICI7MjszMDgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="9.&#9;Calcular e exibir o resultado obtido por um n&#250;mero inteiro A elevado a um expoente inteiro B onde A e B s&#227;o n&#250;meros digitados pelo usu&#225;rio. &#13;&#10;Observa&#231;&#227;o: N&#227;o utilize A**B ou A&#710;B.&#13;&#10;"/>
+            <declare name="a, b, avez, aresultado" type="Integer" array="False" size=""/>
+            <assign variable="avez" expression="1"/>
+            <output expression="&quot;Insira o valor de A:&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="aresultado" expression="a"/>
+            <output expression="&quot;Insira o valor de B:&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="b = 1">
+                <then>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <while expression="avez &lt; b">
+                        <assign variable="aresultado" expression="a * aresultado"/>
+                        <assign variable="avez" expression="avez + 1"/>
+                    </while>
+                    <output expression="aresultado" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

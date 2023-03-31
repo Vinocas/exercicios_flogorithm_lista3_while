@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 07:56:29 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA3OjI3OjE1ICI7Mjk3NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA3OjU2OjI5ICI7MjszMDkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="13.&#9;Calcular e exibir o valor da express&#227;o y = 1*x+2*x+3*x+4*x+5*x+&#8230;+20*x, onde x &#233; um n&#250;mero inteiro digitado pelo usu&#225;rio."/>
+            <declare name="c, multi, soma, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o valor de x:&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="c" expression="1"/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="multi" expression="1"/>
+            <while expression="c &lt;= 20">
+                <assign variable="soma" expression="soma + multi"/>
+                <assign variable="multi" expression="c * x"/>
+                <assign variable="c" expression="c + 1"/>
+            </while>
+            <output expression="&quot;O valor da express&#227;o y = 1*x+2*x+3*x+4*x+5*x+&#8230;+20*x &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

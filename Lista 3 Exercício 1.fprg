@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-21 01:13:56 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjEyOjUyOjI0ICI7Mjk2Mg=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjAxOjEzOjU2ICI7MTszMDcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1.&#9;Exibir a seguinte s&#233;rie: 1, 2, 3, ...,50"/>
+            <declare name="serie" type="Real" array="False" size=""/>
+            <assign variable="serie" expression="1"/>
+            <output expression="serie" newline="True"/>
+            <while expression="serie &lt; 50">
+                <assign variable="serie" expression="serie + 1"/>
+                <output expression="serie" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

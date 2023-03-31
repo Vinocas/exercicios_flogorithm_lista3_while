@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-21 01:18:37 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjAxOjEzOjU5ICI7Mjk2NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjAxOjE4OjM3ICI7MTszMDc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="2.&#9;Exibir a seguinte s&#233;rie: 1, 3, 5, 7, ..., 99"/>
+            <declare name="serie" type="Integer" array="False" size=""/>
+            <assign variable="serie" expression="1"/>
+            <output expression="serie" newline="True"/>
+            <while expression="serie &lt; 99">
+                <assign variable="serie" expression="serie + 1"/>
+                <if expression="serie mod 2 = 0">
+                    <then>
+                        <assign variable="serie" expression="serie + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="serie" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

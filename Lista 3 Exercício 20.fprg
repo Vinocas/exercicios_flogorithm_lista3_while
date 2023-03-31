@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 10:34:53 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjEwOjMwOjQ5ICI7Mjk3MA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjEwOjM0OjUzICI7MTszMDc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="20.&#9;Exibir a tabuada da multiplica&#231;&#227;o de um n&#250;mero inteiro solicitado pelo usu&#225;rio. Por exemplo, para o n&#250;mero 5, temos: 5 x 1  = 5     5 x 2  = 10   ...  5 x 10 = 50"/>
+            <declare name="n, serie" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="serie" expression="0"/>
+            <while expression="serie &lt; 10">
+                <assign variable="serie" expression="serie + 1"/>
+                <output expression="n &amp; &quot;x&quot; &amp; serie &amp; &quot;=&quot; &amp; (n*serie)" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

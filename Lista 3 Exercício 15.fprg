@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 09:10:00 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA4OjQ2OjIyICI7Mjk3NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA5OjEwOjAwICI7MTszMDcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="16.&#9;Construa um algoritmo que verifique se um dado n&#250;mero inteiro &#233; primo."/>
+            <declare name="n, serie, qd" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="serie" expression="1"/>
+            <assign variable="qd" expression="0"/>
+            <if expression="n &gt; 1">
+                <then>
+                    <while expression="serie &lt;= n">
+                        <if expression="n mod serie = 0">
+                            <then>
+                                <assign variable="qd" expression="qd + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="serie" expression="serie + 1"/>
+                    </while>
+                    <if expression="qd = 2">
+                        <then>
+                            <output expression="&quot;Esse n&#250;mero &#233; primo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Esse n&#250;mero n&#227;o &#233; primo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Esse n&#250;mero &#233; primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

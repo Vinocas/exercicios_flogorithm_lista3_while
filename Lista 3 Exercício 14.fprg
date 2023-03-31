@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 08:52:53 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA3OjM2OjE4ICI7Mjk3OA=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA4OjUyOjUzICI7MzszMDg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="14.&#9;O valor aproximado de PI pode ser calculado usando-se a s&#233;rie: &#13;&#10;sendo   ,  calcule e exiba seu valor utilizando 71 termos.&#13;&#10;"/>
+            <declare name="c, imp" type="Integer" array="False" size=""/>
+            <declare name="s, p" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <assign variable="imp" expression="1"/>
+            <assign variable="s" expression="0"/>
+            <while expression="c &lt;= 71">
+                <assign variable="s" expression="s + 1 / (imp*3)"/>
+                <assign variable="c" expression="c + 1"/>
+                <assign variable="imp" expression="imp + 2"/>
+            </while>
+            <assign variable="p" expression="(s*32)^(1/3)"/>
+            <output expression="&quot;PI = &quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

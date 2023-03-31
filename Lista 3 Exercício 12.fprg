@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 10:17:57 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA5OjIyOjQxICI7Mjk3MQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjEwOjE3OjU3ICI7MTszMDgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="12.&#9;Exibir os n primeiros termos da sequ&#234;ncia 1, 1, 2, 3, 5, 8, 13, 21, 34, &#8230;, onde n &#233; um n&#250;mero inteiro digitado pelo usu&#225;rio. "/>
+            <declare name="n, a1, a2, c, t" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="c" expression="1"/>
+            <assign variable="a1" expression="0"/>
+            <assign variable="a2" expression="1"/>
+            <while expression="c &lt;= n">
+                <output expression="a2" newline="True"/>
+                <assign variable="t" expression="a2"/>
+                <assign variable="a2" expression="a1 + a2"/>
+                <assign variable="a1" expression="t"/>
+                <assign variable="c" expression="c + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

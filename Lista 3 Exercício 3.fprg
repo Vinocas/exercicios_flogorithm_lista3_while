@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-21 01:30:56 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjAxOjEzOjU5ICI7Mjk2NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjAxOjMwOjU2ICI7MzszMDcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.&#9;Exibir a seguinte s&#233;rie: 1, 2, 3, ..., N"/>
+            <declare name="serie, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira o valor N&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="serie" expression="1"/>
+            <output expression="serie" newline="True"/>
+            <while expression="serie &lt; n">
+                <assign variable="serie" expression="serie + 1"/>
+                <output expression="serie" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

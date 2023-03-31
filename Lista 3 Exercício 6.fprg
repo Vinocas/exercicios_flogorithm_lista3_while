@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-22 08:24:19 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjE7IjAxOjEzOjU5ICI7Mjk2NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjI7IjA4OjI0OjE5ICI7MTE7MzEyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="6.&#9;Com base no exerc&#237;cio anterior, calcular e exibir o fatorial de n, onde n &#233; um n&#250;mero maior ou igual a zero,  digitado pelo usu&#225;rio. &#13;&#10;Observa&#231;&#227;o: o fatorial de zero &#233; igual a 1.&#13;&#10;"/>
+            <declare name="serie, vez, n" type="Integer" array="False" size=""/>
+            <assign variable="serie" expression="1"/>
+            <assign variable="vez" expression="1"/>
+            <input variable="n"/>
+            <if expression="n = 0">
+                <then>
+                    <output expression="1" newline="True"/>
+                </then>
+                <else>
+                    <while expression="vez &lt;= n">
+                        <assign variable="serie" expression="serie * vez"/>
+                        <output expression="serie" newline="True"/>
+                        <assign variable="vez" expression="vez+1"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

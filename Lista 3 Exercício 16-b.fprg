@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 07:43:42 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA3OjM5OjQ5ICI7Mjk4NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA3OjQzOjQyICI7MzszMDgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="16.&#9;Somat&#243;rio: Construa os algoritmos que calculem os seguintes somat&#243;rios:&#13;&#10;a.&#9;  &#13;&#10;b.&#9; "/>
+            <declare name="c, n" type="Integer" array="False" size=""/>
+            <declare name="soma" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor de n:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="c" expression="1"/>
+            <assign variable="soma" expression="0"/>
+            <while expression="c &lt;= n">
+                <assign variable="soma" expression="soma + c"/>
+                <assign variable="c" expression="c + 1"/>
+            </while>
+            <output expression="&quot;O valor de K &#233;: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

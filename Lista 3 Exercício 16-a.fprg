@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Usu&#225;rio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-28 07:44:08 "/>
+        <attribute name="created" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA3OjM5OjQ5ICI7Mjk4NQ=="/>
+        <attribute name="edited" value="VXN1w6FyaW87VklOSUNJVVNERUxMOzIwMjItMDMtMjg7IjA3OjQ0OjA4ICI7MjszMDg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="16.&#9;Somat&#243;rio: Construa os algoritmos que calculem os seguintes somat&#243;rios:&#13;&#10;a.&#9;  &#13;&#10;b.&#9; "/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="soma, expoente" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <assign variable="soma" expression="0"/>
+            <while expression="c &lt;= 5">
+                <assign variable="soma" expression="soma + c"/>
+                <assign variable="c" expression="c + 1"/>
+            </while>
+            <assign variable="expoente" expression="soma * soma"/>
+            <output expression="&quot;K &#233; igual a = &quot; &amp; expoente" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
